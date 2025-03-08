@@ -7,44 +7,44 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 0 0% 0%; /* Black background */
+    --foreground: 0 100% 55%; /* Red foreground */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card: 0 0% 5%; /* Very dark gray for cards */
+    --card-foreground: 0 100% 55%; /* Red text for cards */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 100% 55%;
 
-    --primary: 210 100% 50%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 100% 55%; /* Red primary */
+    --primary-foreground: 0 0% 0%; /* Black text on primary */
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 100% 55%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 0 0% 13%;
+    --muted-foreground: 0 0% 80%;
 
-    --accent: 210 40% 96%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 0 0% 13%;
+    --accent-foreground: 0 100% 55%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 55%;
+    --destructive-foreground: 0 0% 0%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 5%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 55%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5% 26%;
-    --sidebar-primary: 240 6% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 5% 96%;
-    --sidebar-accent-foreground: 240 6% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-background: 0 0% 5%;
+    --sidebar-foreground: 0 0% 80%;
+    --sidebar-primary: 0 100% 55%;
+    --sidebar-primary-foreground: 0 0% 5%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 100% 55%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 100% 55%;
   }
 
   * {
@@ -65,7 +65,7 @@
 @layer components {
   /* Glass Card Effect */
   .glass-card {
-    @apply bg-gradient-to-br from-white/50 to-white/30 backdrop-blur-lg border border-white/20 shadow-lg;
+    @apply bg-gradient-to-br from-black/70 to-black/50 backdrop-blur-lg border border-white/10 shadow-lg;
   }
 
   /* Cyber Button */
@@ -88,15 +88,15 @@
   }
 
   .badge-blue {
-    @apply bg-cyber-blue/10 text-cyber-blue;
+    @apply bg-cyber-blue/20 text-cyber-blue;
   }
 
   .badge-teal {
-    @apply bg-cyber-teal/10 text-cyber-teal;
+    @apply bg-cyber-teal/20 text-cyber-teal;
   }
 
   .badge-purple {
-    @apply bg-cyber-purple/10 text-cyber-purple;
+    @apply bg-cyber-purple/20 text-cyber-purple;
   }
 
   /* Link Hover Effect */
